@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter Priority</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section filter_container">
+            <button class="btn btn-filter-all" data-filter="all">All</button>
+            <button class="btn btn-filter-high" data-filter="high">High</button>
+            <button class="btn btn-filter-moderate" data-filter="moderate">Moderate</button>
+            <button class="btn btn-filter-low" data-filter="low">Low</button>
+        </div>
+
+        <div class="inputSection">
+            <form class="form">
+                <input type="text" class="form-input" placeholder="Enter Your Task........"/>
+                <select name="" id="priority_select">
+                    <option value="high">High</option>
+                    <option value="moderate">moderate</option>
+                    <option value="low">low</option>
+                </select>
+                <button class="add-TODO">Add</button>
+            </form>
+        </div>
+        <div class="section">
+            <ul class="todolist"></ul>
+
+            <div class="alert"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
